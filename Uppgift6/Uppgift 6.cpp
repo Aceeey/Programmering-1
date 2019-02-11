@@ -13,55 +13,35 @@ int main(int argc, char** argv) {
 	cout << "+ = 1,* = 3, * = 3, / = 4"<<endl;
 	cin >> raknesett;
 	
-
-	
-	
-	if (raknesett==1) {
 	cout <<"Välj första heltalet:"<<endl;
 	cin >>A;
 	
 	cout <<"Välj andra heltalet:"<<endl;
 	cin >>B;
-			
-		A+B==C;
+	
+	
+	if (raknesett == 1) {			
+		C=A+B;
 		
 	cout <<"Svaret är: "<<C<<endl;
 	}	
-    else if (raknesett==2) {
-	cout <<"Välj första heltalet:"<<endl;
-	cin >>A;
-	
-	cout <<"Välj andra heltalet:"<<endl;
-	cin >>B;
-			
-		A-B==C;
+    else if (raknesett == 2) {
+		C=A-B;
 		
 	cout <<"Svaret är: "<<C<<endl;
 		
 	}	
-	else if (raknesett==3) {
-	cout <<"Välj första heltalet:"<<endl;
-	cin >>A;
-	
-	cout <<"Välj andra heltalet:"<<endl;
-	cin >>B;
-			
-		A*B==C;
+	else if (raknesett == 3) {
+		C=A*B;
 		
 	cout <<"Svaret är: "<<C<<endl;
 		
 	}
 	
-	else if (raknesett==4) {
-	cout <<"Välj första heltalet:"<<endl;
-	cin >>A;
-	
-	cout <<"Välj andra heltalet:"<<endl;
-	cin >>B;
-			
-		A/B==A;
+	else if (raknesett == 4) {
+		C=A/B;
 		
-	cout <<"Svaret är: "<<A<<endl;
+	cout <<"Svaret är: "<<C<<endl;
 		
 	}
 	
