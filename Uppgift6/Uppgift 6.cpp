@@ -4,54 +4,46 @@
 
 using namespace std;
 
-int main(int argc, char** argv) {
-	int A;
-	int B;
-	int C;
-	int raknesett;
+int main() {
 	
-	cout << "+ = 1,* = 3, * = 3, / = 4"<<endl;
-	cin >> raknesett;
+	int raknesatt, tal1, tal2, summa;
 	
-	cout <<"Välj första heltalet:"<<endl;
-	cin >>A;
+	cout << "1 = + " << endl << "2 = - " << endl << "3 = * " << endl << "4 = /" << endl;
+	cout << "Ange räknesätt: ";
+	cin >> raknesatt;
 	
-	cout <<"Välj andra heltalet:"<<endl;
-	cin >>B;
+	cout << "Ange det första talet: ";
+	cin >> tal1;
+	cout << "Ange det andra talet: ";
+	cin >> tal2;
 	
-	
-	if (raknesett == 1) {			
-		C=A+B;
+	if (raknesatt == 1) {
 		
-	cout <<"Svaret är: "<<C<<endl;
-	}	
-    else if (raknesett == 2) {
-		C=A-B;
-		
-	cout <<"Svaret är: "<<C<<endl;
-		
-	}	
-	else if (raknesett == 3) {
-		C=A*B;
-		
-	cout <<"Svaret är: "<<C<<endl;
+		summa = tal1 + tal2;
+		cout << tal1 << " + " << tal2 << " = " << summa;
 		
 	}
 	
-	else if (raknesett == 4) {
-		C=A/B;
+	else if (raknesatt == 2) {
 		
-	cout <<"Svaret är: "<<C<<endl;
+		summa = tal1 - tal2;
+		cout << tal1 << " - " << tal2 << " = " << summa;
+	
+	}
+
+	else if (raknesatt == 3) {
+		
+		summa = tal1 * tal2;
+		cout << tal1 << " * " << tal2 << " = " << summa;
+	
+	}
+
+	else if (raknesatt == 4) {
+		
+		summa = tal1 / tal2;
+		cout << tal1 << " / " << tal2 << " = " << summa;
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	return 0;
