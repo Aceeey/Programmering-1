@@ -10,6 +10,7 @@ int main(int argc, char** argv) {
  int miltal;
  int bensin;
  int forbrukning;
+ 
 	cout << "Hur ser dagens matarstallning ut?";
 	cin >>tal1;
 	
@@ -22,9 +23,9 @@ int main(int argc, char** argv) {
 	miltal = tal1 - tal2;
 	forbrukning = miltal / bensin;
 	
-	cout << "Antal mil körda: "<< miltal;
-	cout << "Antal mängd bensin: "<<bensin;
-	cout << "Forbrukning per mil: "<<forbrukning;
+	cout << "Antal mil körda: "<< miltal<<endl;
+	cout << "Antal mängd bensin: "<<bensin<<endl;
+	cout << "Forbrukning per mil: "<<forbrukning<<endl;
 	
 	
 	

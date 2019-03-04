@@ -33,27 +33,6 @@ int main() {
 		cout << "Not even close!";
 		
 	}
-	
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

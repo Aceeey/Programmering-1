@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
   C=min+min1;
   D=sec+sec1;
   
-  cout << "Din totala tid är: "<<B<<endl<<C<<endl<<D<<endl<<endl;
+  cout << "Din totala tid är (TIM MIN SEC): "<<B<<endl<<C<<endl<<D<<endl<<endl;
   
   
 	
