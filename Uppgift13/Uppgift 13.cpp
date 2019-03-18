@@ -5,28 +5,38 @@
 using namespace std;
 
 int main(int argc, char** argv) {
+	int A,B,C,D;
 	
-	int tal1, tal2, hopp;
-	
-	while (tal1 < 10 or tal1 > 20) {
-		
-		cout << "Ange ett tal mellan 10 och 20: ";
-		cin >> tal1;
-		
-	}
-	
-	cout << "Ange talet som det ska räknas ner till: ";
-	cin >> tal2;
-	
-	cout << "Ange mängden tal som ska hoppas över för varje steg: ";
-	cin >> hopp;
-	
-	while (tal1 > tal2) {
-		
-		cout << tal1 << endl;
-		tal1 = tal1 - hopp;
-		
-	}
+  cout << "Skriv in din 4 siffriga pin-kod:"<<endl;
+  cin << A;
+  
+  if (A != 1200 ) {
+  	Cout <<"Du skrev in fel kod! Pröva igen (2/3 försök kvar)"<<endl;
+  	cin<<B
+  }
+    if else (A != 1200 ) {
+  	Cout <<"Du skrev in fel kod! Pröva igen (1/3 försök kvar)"<<endl;
+  	cin<<c
+  }
+    if else (A != 1200 ) {
+  	Cout <<"Du skrev in fel kod! Pröva igen (0/3 försök kvar)"<<endl;
+  	Cout << "Stänger ner programmet nu!"
+  }
+
+  
+    if else(A == 1200) {
+  	Cout << "Grattis du får nu ta ut pengar!";
+  	Cout << "Programmet stängs nu ner!"
+  }
+    if else(B == 1200) {
+  	Cout << "Grattis du får nu ta ut pengar!";
+  	Cout << "Programmet stängs nu ner!"
+  }
+    if else(C == 1200) {
+  	Cout << "Grattis du får nu ta ut pengar!";
+  	Cout << "Programmet stängs nu ner!"
+  }
+
 	
 	return 0;
 }

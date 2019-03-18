@@ -5,13 +5,10 @@
 
 using namespace std;
 
-int main(int argc, char** argv) {
-	
+int main (int argc, char** argv) {
 	int tal1, tal2, tusen;
 	
 	tal1 = 10001;
-	
-int main (int argc, char** argv) {
 	
 	tal1 = tal2 - tal1;
 	
@@ -22,6 +19,8 @@ int main (int argc, char** argv) {
 		
 		tal2 = tal1 / 1000;
 		tal2 = floor (tal2);
+		
+			}
 		
 		if (tal2 != 0) {
 			
@@ -40,9 +39,9 @@ int main (int argc, char** argv) {
 			cout << tal2 << " Tusenlappar" << endl;
 			
 		}
-	}		
+	}
 	
-	if (tal1 >= 500) {
+    if (tal1 >= 500) {
 		
 		tal2 = tal1 / 500;
 		tal2 = floor (tal2);
@@ -62,6 +61,8 @@ int main (int argc, char** argv) {
 		}
 		
 		tal1 = tal1 % 1000;
+	
+		
 		else {
 			
 			cout << tal2 << " Femhundralappar " << endl;
