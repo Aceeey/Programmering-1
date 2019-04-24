@@ -8,18 +8,35 @@ int main(int argc, char** argv) {
 
 	bool run;
 	int Counter = 0;
-	int Max = 1000;
+	int Max = 10;
+	int A;
 	
-	run = false;
+	run = true;
 	
-	while (Counter < run) {
+	while (Counter < Max) {
 		
 		Counter++;
 		
 		}
     
-	cout << Counter;
+	cout << Counter<<endl;
     
+    cout << "Vill du avsluta programmet? (1 = Ja, 2 = Nej)" <<endl;
+    cin >> A;
+    
+    if (A == 2) {
+    	while (Counter < Max) {
+		
+		Counter++;
+		
+		}
+		cout << Counter<<endl;
+	}
+	
+	else if (A == 1) {
+		cout <<"Du stängde nyss ner programmet!"<<endl;
+		run = false;
+	}
     
     
 	return 0;
