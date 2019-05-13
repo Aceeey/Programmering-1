@@ -39,7 +39,6 @@ int main (int argc, char** argv) {
 			cout << tal2 << " Tusenlappar" << endl;
 			
 		}
-	}
 	
     if (tal1 >= 500) {
 		
@@ -60,7 +59,7 @@ int main (int argc, char** argv) {
 		 	
 		}
 		
-		tal1 = tal1 % 1000;
+		tal1 = tal1 % 1000;   }
 	
 		
 		else {

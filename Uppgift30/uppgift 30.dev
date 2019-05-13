@@ -1,6 +1,6 @@
 [Project]
-FileName=uppgift 29.dev
-Name=uppgift 29
+FileName=uppgift 30.dev
+Name=uppgift 30
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=uppgift 29.cpp
+FileName=uppgift 30.cpp
 CompileCpp=1
 Folder=
 Compile=1
