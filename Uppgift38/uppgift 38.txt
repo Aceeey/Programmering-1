@@ -1,0 +1,5 @@
+C:\Programmering\Uppgift39\uppgift 39.cpp	In function 'void Calcualtor()':
+21	61	C:\Programmering\Uppgift39\uppgift 39.cpp	[Error] 'Calculator' was not declared in this scope
+C:\Programmering\Uppgift39\uppgift 39.cpp	In function 'int main(int, char**)':
+27	13	C:\Programmering\Uppgift39\uppgift 39.cpp	[Error] 'Calculator' was not declared in this scope
+28		C:\Programmering\Uppgift38\Makefile.win	recipe for target '"../Uppgift39/uppgift 39.o"' failed

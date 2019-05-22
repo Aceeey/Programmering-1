@@ -7,9 +7,9 @@ int main(int argc, char** argv) {
 	char byta = 'Z';
 	
 	cout << "Vad är ditt namn?: ";
-	cin >> name;
+	cin >> namn;
 	
-	name[0] = change;
-	cout << name;
+	namn[0] = byta;
+	cout << namn;
 	return 0;
 }

@@ -16,7 +16,6 @@ int main(int argc, char** argv) {
 		if(ord [i] == 'Z') 
 			ord[i] = 'a';
 		}
-	}
 	
 	cout <<ord;
 	
