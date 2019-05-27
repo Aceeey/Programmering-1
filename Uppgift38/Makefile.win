@@ -4,8 +4,8 @@
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "../Uppgift39/uppgift\ 39.o"
-LINKOBJ  = "../Uppgift39/uppgift 39.o"
+OBJ      = "uppgift\ 38.o"
+LINKOBJ  = "uppgift 38.o"
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
@@ -24,5 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-"../Uppgift39/uppgift\ 39.o": ../Uppgift39/uppgift\ 39.cpp
-	$(CPP) -c "../Uppgift39/uppgift 39.cpp" -o "../Uppgift39/uppgift 39.o" $(CXXFLAGS)
+"uppgift\ 38.o": uppgift\ 38.cpp
+	$(CPP) -c "uppgift 38.cpp" -o "uppgift 38.o" $(CXXFLAGS)
