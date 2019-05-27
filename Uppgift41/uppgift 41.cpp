@@ -27,7 +27,7 @@ int RandomGenerator(int storst, int minst, int nummer) {
 int main(int argc, char** argv) {
 	int storst, minst, nummer;
 	
-	cout << RandomGenerator(storst, minst, nummer);
+	cout << RandomGenerator(nummer, storst, minst);
 	
 	return 0;
 }
