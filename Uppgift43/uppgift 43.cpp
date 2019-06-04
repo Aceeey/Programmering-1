@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
 		}
 	}
 	
-	cout << "Do you want to play again? y/n: ";
+	cout << "Spela igen? y/n: ";
 	cin >> omstart;
 	}
 	

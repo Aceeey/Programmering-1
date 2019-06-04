@@ -1,265 +1,137 @@
  #include <iostream>
-#include <math.h>
-
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 using namespace std;
 
-int main (int argc, char** argv) {
-	int tal1, tal2, tusen;
+int main() {
 	
-	tal1 = 10001;
+	int ett, tvo, fem, tio, tjugo, femtio, hundra, tvohundra, femhundra, tusen, vexel, kop, betal;
 	
-	tal1 = tal2 - tal1;
+	ett = 0;
+	tvo = 0;
+	fem = 0;
+	tio = 0;
+	tjugo = 0;
+	femtio = 0;
+	hundra = 0;
+	tvohundra = 0;
+	femhundra = 0;
+	tusen = 0;
 	
-	cout << "Totalt " << tal1 << " kr";
-	cout << "Totalt " << tal1 << " kr" << endl;
 	
-	if (tal1 >= 1000) {
-		
-		tal2 = tal1 / 1000;
-		tal2 = floor (tal2);
-		
-			}
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 1000;
-			
-		}
-		
-		if (tal2 == 1) {
-			
-			cout << tal2 << " Tusenlapp" << endl;
-			
-		}
-		
-		else {
-			
-			cout << tal2 << " Tusenlappar" << endl;
-			
-		}
+	kop = 20000;
 	
-    if (tal1 >= 500) {
-		
-		tal2 = tal1 / 500;
-		tal2 = floor (tal2);
-		
-	tal2 = tal1 / 1000;
-	tusen = floor (tal2);
-	if (tusen != 0) {
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 500;
-			
-		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Femhundralapp " << endl;
-		 	
-		}
-		
-		tal1 = tal1 % 1000;   }
+	while(kop > 10000)
+	{
+	cout << "Hur mycket köpte du för? ";
+	cin >> kop;
+	}
+	cout << "Hur mycket betalade du? ";
+	cin >> betal;
 	
-		
-		else {
-			
-			cout << tal2 << " Femhundralappar " << endl;
-			
-		} 
-		
+	if(betal == kop or betal < kop)
+	{
+		cout << "Du ska få tillbaka: 0";
+		return 0;
 	}
 	
-	if (tal1 >= 200) {
-		
-		tal2 = tal1 / 200;
-		tal2 = floor (tal2);
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 200;
-			
+	vexel = betal - kop;
+	
+	cout << "Total växel: " << vexel << endl;
+	
+	while(vexel > 0)
+	{
+		while(vexel >= 1000)
+		{
+			vexel = vexel - 1000;
+			tusen = tusen + 1;
+	 	}
+	 	while(vexel >= 500)
+	 	{
+	 		vexel = vexel - 500;
+	 		femhundra = femhundra + 1;
 		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Tv?hundralapp " << endl;
-		 	
+		while(vexel >= 200)
+		{
+			vexel = vexel - 200;
+			tvohundra = tvohundra + 1;
 		}
-		
-		else {
-			
-			cout << tal2 << " Tv?hundralappar " << endl;
-			
-		} 
-		
+	 	while(vexel >= 100)
+	 	{
+	 		vexel = vexel - 100;
+	 		hundra = hundra + 1;
+		}
+	 	while(vexel >= 50)
+	 	{
+	 		vexel = vexel - 50;
+	 		femtio = femtio + 1;
+		}
+		while(vexel >= 20)
+		{
+			vexel = vexel - 20;
+			tjugo = tjugo + 1;
+		}
+		while(vexel >= 10)
+		{
+			vexel = vexel - 10;
+			tio = tio + 1;
+		}
+		while(vexel >= 5)
+		{
+			vexel = vexel - 5;
+		fem = fem + 1;
+		}
+		while(vexel >= 2)
+		{
+			vexel = vexel - 2;
+			tvo = tvo + 1;
+		}
+		while(vexel >= 1)
+		{
+			vexel = vexel - 1;
+			ett = ett + 1;
+		}
 	}
 	
-	if (tal1 >= 100) {
-		
-		tal2 = tal1 / 100;
-		tal2 = floor (tal2);
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 100;
-			
-		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Hundralapp " << endl;
-		 	
-		}
-		
-		else {
-			
-			cout << tal2 << " Hundralappar " << endl;
-			
-		} 
-		
+	cout << "Din växel: " << endl;
+	if(tusen > 0)
+	{
+		cout << tusen << "tusen" << endl;
 	}
-	
-	if (tal1 >= 50) {
-		
-		tal2 = tal1 / 50;
-		tal2 = floor (tal2);
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 50;
-			
-		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Femtiolapp " << endl;
-		 	
-		}
-		
-		else {
-			
-			cout << tal2 << " Femtiolappar " << endl;
-			
-		} 
-		
+		if(femhundra > 0)
+	{
+		cout << femhundra << " femhundra" << endl;
 	}
-	
-	if (tal1 >= 20) {
-		
-		tal2 = tal1 / 20;
-		tal2 = floor (tal2);
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 20;
-			
-		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Tjugolapp " << endl;
-		 	
-		}
-		
-		else {
-			
-			cout << tal2 << " Tjugolappar " << endl;
-			
-		} 
-		
+		if(tvohundra > 0)
+	{
+		cout << tvohundra << " tvohundra" << endl;
 	}
-	
-	if (tal1 >= 10) {
-		
-		tal2 = tal1 / 10;
-		tal2 = floor (tal2);
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 10;
-			
-		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Tia " << endl;
-		 	
-		}
-		
-		else {
-			
-			cout << tal2 << " Tior " << endl;
-			
-		} 
-		
+		if(hundra > 0)
+	{
+		cout << hundra << " etthundra" << endl;
 	}
-	
-	if (tal1 >= 5) {
-		
-		tal2 = tal1 / 5;
-		tal2 = floor (tal2);
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 5;
-			
-		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Femma " << endl;
-		 	
-		}
-		
-		else {
-			
-			cout << tal2 << " Femmor " << endl;
-			
-		} 
-		
+		if(femtio > 0)
+	{
+		cout << femtio << " femtio" << endl;
 	}
-	
-	if (tal1 >= 2) {
-		
-		tal2 = tal1 / 2;
-		tal2 = floor (tal2);
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 2;
-			
-		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Tv?a " << endl;
-		 	
-		}
-		
-		else {
-			
-			cout << tal2 << " Tv?or " << endl;
-			
-		} 
-		
+		if(tjugo > 0)
+	{
+		cout << tjugo << " tjugtio" << endl;
 	}
-	
-	if (tal1 >= 1) {
-		
-		tal2 = tal1 / 1;
-		tal2 = floor (tal2);
-		
-		if (tal2 != 0) {
-			
-			tal1 = tal1 % 1;
-			
-		}
-		 if (tal2 == 1) {
-		 	
-		 	cout << tal2 << " Etta " << endl;
-		 	
-		}
-		
-		else {
-			
-			cout << tal2 << " Ettor " << endl;
-			
-		} 
-		
+		if(tio > 0)
+	{
+		cout << tio << " tia" << endl;
+	}
+		if(fem > 0)
+	{
+		cout << fem << " fem" << endl;
+	}
+		if(tvo > 0)
+	{
+		cout << tvo << " två" << endl;
+	}
+		if(ett > 0)
+	{
+		cout << ett << " ett" << endl;
 	}
 	
 	return 0;

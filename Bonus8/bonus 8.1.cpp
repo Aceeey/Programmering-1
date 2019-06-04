@@ -4,12 +4,12 @@ using namespace std;
 
 int main() {
 	
-	int number, n = 1;
+	int number, n = 1, stop = 1;
 	
 	for(int x = 1; x <= 10; x++)
 	{
 		
-	while(n <= 10)
+	while(n <= stop)
 	{
 		cout << number << " ";
 		number++;
@@ -19,6 +19,7 @@ int main() {
 	cout << endl;
 	number = 0;
 	n = 1;
+	stop++;
 	}
 	
 	return 0;
