@@ -8,7 +8,7 @@ int main(int argc, char** argv) {
 	char a1 = 'M', a2 = 'A', a3 = 'T';
 	char a4 = 'm', a5 = 'a', a6 = 't';
 	
-	cout << "Please write a word " << endl;
+	cout << "Skriv in ett ord: " << endl;
 	getline(cin, ord);
 	
 	int stop = 0;
